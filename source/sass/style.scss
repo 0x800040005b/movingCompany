@@ -1,0 +1,13 @@
+@import "reset.scss";
+@import "colors.scss";
+@import "blocks/header.scss";
+@import "blocks/hero.scss";
+@import "blocks/step.scss";
+@import "blocks/price.scss";
+@import "blocks/park.scss";
+.title{
+  font-size: 30px;
+  font-weight: 600;
+  color: $black-90-color;
+  line-height: 36.57px;
+}
