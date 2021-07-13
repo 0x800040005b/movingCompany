@@ -28,16 +28,20 @@
 
       }
   }
-    &__link{
-      font-weight: 500;
-      font-size: 18px;
-      color: $black-90-color;
-      transition: all 0.8s ease;
-      &:hover{
-        border-bottom:1px solid currentColor;
-      }
-    }
+
 }
+}
+.menu{
+  &__link{
+    font-weight: 500;
+    font-size: 18px;
+    color: $black-90-color;
+    transition: all 0.8s ease;
+    &:hover{
+      border-bottom:1px solid currentColor;
+    }
+
+  }
 }
 .number{
   color: $black-90-color;

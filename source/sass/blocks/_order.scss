@@ -38,10 +38,11 @@
         font-weight: 500;
         color: rgba($black-90-color, 0.7);
       }
-      &__phone{
-        margin-right: 132px;
-      }
     }
+    &__phone{
+      margin-right: 132px;
+    }
+
     &-wrapper{
       display: flex;
       flex-wrap: wrap;
