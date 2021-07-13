@@ -1,0 +1,61 @@
+.map {
+  position: relative;
+  &-info{
+    position: absolute;
+    top: 162px;
+    left: 449px;
+    max-width: 368px;
+    background-color: $white-color;
+    padding: 40px;
+  }
+  &-logo{
+    display: inline-block;
+    margin-bottom: 38px;
+  }
+  &-item{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 21px;
+    color: $black-90-color;
+  }
+
+  &-list{
+    margin-bottom: 47px;
+    &__item{
+      margin-bottom: 20px;
+      margin-left: 16.65px;
+      position: relative;
+      &::before{
+        content: '';
+        background-image: url("../img/map/checkIcon.svg");
+        background-repeat: no-repeat;
+        background-size: 13.35px 14px;
+        width: 13.35px;
+        height: 14px;
+        position: absolute;
+        top: 0;
+        left: -25.65px;
+      }
+    }
+  }
+  &-social{
+
+    justify-content: flex-end;
+  }
+  &-mail{
+    text-decoration: underline;
+    line-height: 1px;
+  }
+
+}
+.social{
+  display: flex;
+  flex-wrap: wrap;
+  &-link{
+    margin-right: 25px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

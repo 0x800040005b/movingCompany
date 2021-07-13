@@ -1,0 +1,76 @@
+.footer{
+  padding-top: 100px;
+  padding-bottom: 102px;
+  background-color: $yellow-color;
+  &-container{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 100px;
+  }
+  &-section{
+    align-items: start;
+    &_1{
+      min-width: 238px;
+    }
+
+  }
+  &-logo{
+    display: inline-block;
+    margin-bottom: 39px;
+  }
+  &-link{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #0E0F12;
+    display: inline-block;
+    margin-bottom: 36px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+  }
+  &-menu{
+    &__link{
+      display: inline-block;
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      color: $black-90-color;
+    }
+  }
+  &-social{
+    margin-bottom: 20px;
+    &__link{
+      margin-right: 27px;
+    }
+  }
+&-mail{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $black-90-color;
+  text-decoration: underline;
+}
+  &-callback{
+    border: 1px solid $black-90-color;
+    font-size: 20px;
+    font-weight: 500;
+    color: $black-90-color;
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px 30px;
+    max-width: 250px;
+  }
+  &-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-number{
+    margin: 0;
+    align-self: center;
+  }
+}
