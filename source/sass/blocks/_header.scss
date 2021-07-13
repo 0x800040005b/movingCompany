@@ -1,5 +1,5 @@
 .header{
-  padding-top: 43px;
+  padding-top: 47px;
   position: absolute;
   top: 0;
   left: 0;
@@ -16,28 +16,28 @@
     line-height: 10px;
     align-self: flex-start;
   }
-}
-.menu{
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 560px;
-  align-self: flex-start;
-  &-item{
-    margin-right: 47px;
-    &:last-child{
-      margin-right: 0;
-    }
-  }
-  &-link{
-    font-weight: 500;
-    font-size: 18px;
-    color: $black-90-color;
-    transition: all 0.8s ease;
-    &:hover{
-      border-bottom:1px solid currentColor;
-    }
+  &-menu{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 560px;
+    align-self: flex-start;
+    &__item{
+      margin-right: 47px;
+      &:last-child{
+        margin-right: 0;
 
+      }
   }
+    &__link{
+      font-weight: 500;
+      font-size: 18px;
+      color: $black-90-color;
+      transition: all 0.8s ease;
+      &:hover{
+        border-bottom:1px solid currentColor;
+      }
+    }
+}
 }
 .number{
   color: $black-90-color;

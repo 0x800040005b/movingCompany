@@ -1,0 +1,75 @@
+.order{
+  padding-top: 124px;
+  padding-bottom: 124px;
+  background-color: $white-color;
+  &-wrapper{
+    max-width: 1002px;
+    margin: 0 auto;
+  }
+  &-title{
+    letter-spacing: 0.5px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    color: $black-90-color;
+    margin-bottom: 10px;
+  }
+  &-legend{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $black-90-color;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  &-form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px 70px;
+    align-items: start;
+    &__input{
+      max-width: 300px;
+      display: inline-block;
+      border: none;
+      border-bottom: 1px solid $black-90-color;
+      padding: 10px 0;
+      &::placeholder{
+        font-size: 20px;
+        font-weight: 500;
+        color: rgba($black-90-color, 0.7);
+      }
+      &__phone{
+        margin-right: 132px;
+      }
+    }
+    &-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    &__submit{
+      padding: 13px 31px;
+      background-color: $red-color;
+      color: $white-90-color;
+      margin-bottom: 12px;
+      border:none;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      max-width: 250px;
+    }
+    &-subwrapper{
+      display: flex;
+      align-items: center;
+    }
+    &__checkbox{
+      margin-right: 10px;
+    }
+    &__label{
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.015em;
+    }
+
+  }
+}

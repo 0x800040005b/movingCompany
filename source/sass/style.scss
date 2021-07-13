@@ -5,9 +5,17 @@
 @import "blocks/step.scss";
 @import "blocks/price.scss";
 @import "blocks/park.scss";
+@import "blocks/reviews.scss";
+@import "blocks/order.scss";
+@import "blocks/map.scss";
 .title{
   font-size: 30px;
   font-weight: 600;
   color: $black-90-color;
   line-height: 36.57px;
 }
+/*
+.container{
+  outline: 5px solid $red-color;
+  outline-offset: -5px;
+}*/

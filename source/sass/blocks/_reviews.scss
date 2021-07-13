@@ -1,0 +1,78 @@
+.reviews{
+  padding-top: 110px;
+  padding-bottom: 94px;
+  background-color: $yellow-color;
+
+  &-title{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 20px;
+    margin-bottom: 60px;
+  }
+  &-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  &-author{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    color: $black-90-color;
+    margin-bottom: 10px;
+  }
+  &-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 19px;
+  }
+  &-date{
+    margin-right: 9.5px;
+    font-size: 16px;
+    line-height: 21px;
+    color: $black-90-color;
+  }
+  &-mark{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0.5px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $black-90-color;
+    margin-bottom: 18px;
+  }
+  &-more{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $black-90-color;
+    margin-top: auto;
+    border-bottom: 1px solid $black-90-color;
+    align-self: flex-start;
+  }
+  &-all{
+    padding: 13px 64px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $black-90-color;
+    border: 1px solid $black-90-color;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 255px;
+
+  }
+
+}
