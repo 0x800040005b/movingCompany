@@ -16,7 +16,7 @@
 .card{
   &-list{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 25px 25px;
   }
   &-item{
@@ -63,6 +63,24 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
+    margin: 0 auto;
   }
+  &-more{
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: $black-90-color;
+
+    &:hover{
+      border-bottom: 1px solid $black-90-color;
+    }
+    &-wrapper{
+      margin-top: 20px;
+      text-align: center;
+      display: none;
+    }
+
+  }
+
 
 }

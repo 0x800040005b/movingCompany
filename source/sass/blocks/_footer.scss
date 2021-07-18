@@ -3,10 +3,10 @@
   padding-bottom: 102px;
   background-color: $yellow-color;
   &-container{
-
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-column-gap: 100px;
+    grid-row-gap: 20px;
   }
   &-section{
     align-items: start;

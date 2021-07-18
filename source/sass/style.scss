@@ -9,14 +9,58 @@
 @import "blocks/order.scss";
 @import "blocks/map.scss";
 @import "blocks/footer.scss";
+body{
+  min-width: auto;
+}
 .title{
   font-size: 30px;
   font-weight: 600;
   color: $black-90-color;
   line-height: 36.57px;
 }
-/*
 .container{
-  outline: 5px solid $red-color;
-  outline-offset: -5px;
-}*/
+  /*
+  outline: 2px solid $red-color;
+  outline-offset:-2px;
+  */
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $yellow-color;
+  transition: all 0.8s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.overlay{
+  &.active{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.burger{
+  display: none;
+  align-self: flex-start;
+  &:hover{
+    cursor: pointer;
+  }
+  &-line{
+    display: block;
+    width: 44px;
+    height: 2px;
+    background-color: $black-90-color;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+
+@import "media";

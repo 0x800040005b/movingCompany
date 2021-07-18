@@ -38,6 +38,10 @@
         font-weight: 500;
         color: rgba($black-90-color, 0.7);
       }
+      &:focus{
+        outline: none;
+        border-color: $red-color;
+      }
     }
     &__phone{
       margin-right: 132px;

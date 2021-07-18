@@ -5,6 +5,8 @@
   background-size: 499px 300px;
   background-position: 1218px 180px;
   padding-top: 42px;
+  position: relative;
+  z-index: 0;
 
   &-wrapper{
     display: flex;
@@ -22,6 +24,7 @@
     margin-bottom: 6px;
   }
   &-subtitle{
+    display: block;
     font-size: 30px;
     font-weight: 600;
     line-height: 37px;
@@ -38,9 +41,8 @@
     font-weight: 600;
     line-height: 29px;
     background: $red-color;
-    position: relative;
-    z-index: 2;
     margin-bottom: 77px;
+    position: relative;
     &::after{
       content: '';
       position:absolute;
@@ -51,7 +53,6 @@
       padding: 16px 95px;
       border: 2px solid $white-90-color;
       z-index: -1;
-
     }
   }
   &-features{
