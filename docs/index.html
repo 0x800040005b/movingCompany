@@ -11,21 +11,31 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Moving Apartment</title>
 </head>
-<body class="page__body">
-<header class="header">
+<body>
+<header id="header" class="header">
     <div class="container header-container">
         <a class="logo header-logo">
-            <img src="img/header/logo.svg" alt="Logo" class="logo__img" width="115" height="37">
+            <picture class="picture-logo">
+                <source srcset="img/header/logo-mobile.svg" media="(max-width: 320px)">
+                <img src="img/header/logo.svg" alt="Logo" class="logo__img" width="115" height="37">
+
+            </picture>
         </a>
-        <ul class="menu header-menu">
-            <li class="header-menu__item"><a href="#" class="header-menu__link menu__link">Цены</a></li>
-            <li class="header-menu__item"><a href="#" class="header-menu__link menu__link">Автопарк</a></li>
-            <li class="header-menu__item"><a href="#" class="header-menu__link menu__link">Отзывы</a></li>
-            <li class="header-menu__item"><a href="#" class="header-menu__link menu__link">Контакты</a></li>
-
-
-        </ul>
-        <a href="tel:88000801213" class="number">8(800)-080-12-13</a>
+        <div id="menu-container" class="menu-container">
+            <ul id="menu" class="menu header-menu">
+                <li class="header-menu__item"><a href="#" class="header-menu__link menu__link">Цены</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link menu__link">Автопарк</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link menu__link">Отзывы</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link menu__link">Контакты</a></li>
+            </ul>
+            <div id="header-menu__close" class="header-menu__close"></div>
+        </div>
+        <!-- /.menu-container -->
+        <a href="tel:88000801213" class="number header-number">8(800)-080-12-13</a>
+        <div id="burger" class="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span></div>
     </div>
     <!-- /.container -->
 </header>
@@ -38,9 +48,9 @@
                     <h1 class="hero-title">
                         Квартирные <br>
                         переезды
+                        <small class="hero-subtitle">По Москве и области</small>
                     </h1>
-                    <h2 class="hero-subtitle">По Москве и области</h2>
-                    <a href="#" class="hero-button">заказать</a>
+                    <a href="#" class="hero-button order-button">заказать</a>
                     <ul class="hero-features__list">
                         <li class="hero-features__item features-item_1">
                             <img src="img/hero/icons/truck-group.svg" alt="icon truck" width="54.64" height="39"
@@ -65,8 +75,13 @@
                     </ul>
                 </div>
                 <!-- /.hero-content -->
-                <div class="hero-mover"><img src="img/hero/mover.png" alt="mover" width="381" height="608"
-                                             class="mover"></div>
+                <div class="hero-mover">
+                    <picture class="hero-picture">
+                        <source srcset="img/hero/mover-mobile.png" media="(max-width: 320px)">
+                        <img src="img/hero/mover.png" alt="mover" class="mover">
+
+                    </picture>
+                </div>
             </div>
             <!-- /.hero-wrapper -->
         </div>
@@ -99,7 +114,7 @@
                     <div class="step-item">
                         <span class="step-number">03</span>
                         <div class="step-content">
-                            <h3 class="step-content__title">Погрузка и транспортировка вещей</h3>
+                            <h3 class="step-content__title">Погрузка и транспортировка <span class="hide-mobile">вещей</span></h3>
                             <p class="step-content__descr">В нашем автопарке имеются машины, подходящие для мебели любых
                                 габаритов.</p>
                         </div>
@@ -137,9 +152,9 @@
                         <p class="card-feature">Переезд за 4 часа</p>
                     </div>
                     <p class="card-price">8 490&#8381;</p>
-                    <a href="#" class="card-order__button">Заказать</a>
+                    <a href="#" class="card-order__button order-button">Заказать</a>
                 </li>
-                <li class="card-item">
+                <li class="card-item card-hide">
                     <h3 class="card-title">2-комнатная кв-ра </h3>
                     <div class="card-features">
                         <p class="card-feature">1 газель - 3 метра </p>
@@ -147,9 +162,9 @@
                         <p class="card-feature">Переезд за 4 часа</p>
                     </div>
                     <p class="card-price">10 990&#8381;</p>
-                    <a href="#" class="card-order__button">Заказать</a>
+                    <a href="#" class="card-order__button order-button">Заказать</a>
                 </li>
-                <li class="card-item">
+                <li class="card-item card-hide">
                     <h3 class="card-title">3-комнатная кв-ра </h3>
                     <div class="card-features">
                         <p class="card-feature">1 газель - 4 метра</p>
@@ -157,10 +172,13 @@
                         <p class="card-feature">Переезд за 6 часов</p>
                     </div>
                     <p class="card-price">16 490&#8381;</p>
-                    <a href="#" class="card-order__button">Заказать</a>
+                    <a href="#" class="card-order__button order-button">Заказать</a>
                 </li>
 
             </ul>
+            <div class="card-more-wrapper">
+                <a href="#" class="card-more">Все цены</a>
+            </div>
         </div>
         <!-- /.container -->
     </section>
@@ -189,9 +207,12 @@
                                     <li class="park-text__item">Грузоподъемность 1,5 т</li>
                                 </ul>
                             </div>
-                            <a href="#" class="park-order__button">заказать</a>
+                            <a href="#" class="park-order__button order-button">заказать</a>
                         </div>
-                        <img src="img/carpark/furgon.png" alt="furgon-image" width="641" height="453" class="park-img">
+                        <picture class="park-slider__picture">
+                            <source srcset="img/carpark/furgon-mobile.png" media="(max-width: 576px)">
+                            <img src="img/carpark/furgon.png" alt="furgon-image" class="park-img">
+                        </picture>
                     </div>
                     <!-- /.park-slider -->
                 </div>
@@ -235,7 +256,7 @@
                         и профессиональный сотрудник, за что ему огромное... </p>
                     <a href="#" class="reviews-more">Читать полностью</a>
                 </div>
-                <div class="reviews-item">
+                <div class="reviews-item reviews-hide">
                     <h3 class="reviews-author">Светлана Васильевна </h3>
                     <div class="reviews-info">
                         <time class="reviews-date" datetime="2019/09/13">13.09.2019</time>
@@ -270,7 +291,7 @@
                     </p>
                     <a href="#" class="reviews-more">Читать полностью</a>
                 </div>
-                <div class="reviews-item">
+                <div class="reviews-item reviews-hide">
                     <h3 class="reviews-author">Ольга Петрова</h3>
                     <div class="reviews-info">
                         <time class="reviews-date" datetime="2019.11.11">11.11.2019</time>
@@ -392,7 +413,7 @@
                 </a>
                 <div class="footer-docs">
                     <a href="#" class="footer-link">Политика <br> конфиденциальнности</a>
-                    <a href="#" class="footer-link">Соглашение на обработку персональных данных</a>
+                    <a href="#" class="footer-link">Соглашение на обработку <br> персональных данных</a>
                 </div>
 
             </div>
@@ -444,5 +465,7 @@
 </footer>
 <!-- /.footer -->
 
+<div id="overlay" class="overlay"></div>
+<script src="js/main.js"></script>
 </body>
 </html>

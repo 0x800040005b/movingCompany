@@ -7,15 +7,18 @@
   box-sizing: border-box;
 }
 html, body{
-  height: 100%;
   min-height: 100%;
 }
 
-.page__body{
+body{
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   min-width: 1336px;
+  position: relative;
 
+}
+.lock{
+  overflow: hidden;
 }
 .container{
   width: 100%;
