@@ -9,38 +9,32 @@
 @import "blocks/order.scss";
 @import "blocks/map.scss";
 @import "blocks/footer.scss";
-body{
-  min-width: auto;
-}
+@import "blocks/form-callback.scss";
+
 .title{
   font-size: 30px;
   font-weight: 600;
   color: $black-90-color;
   line-height: 36.57px;
 }
-.container{
-  /*
-  outline: 2px solid $red-color;
-  outline-offset:-2px;
-  */
-}
+
 .overlay{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $yellow-color;
+  background-color: rgba($black-90-color, 0.7);
   transition: all 0.8s ease;
   opacity: 0;
   visibility: hidden;
-}
-.overlay{
   &.active{
     opacity: 1;
     visibility: visible;
   }
+
 }
+
 .burger{
   display: none;
   align-self: flex-start;
@@ -58,9 +52,5 @@ body{
     }
   }
 }
-
-
-
-
 
 @import "media";
