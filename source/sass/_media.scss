@@ -40,6 +40,7 @@
       display: block;
       width: 100%;
       max-width: 100%;
+      margin-right: 50px;
 
 
       &__item {
@@ -50,11 +51,8 @@
       &__link {
         display: block;
         padding: 10px;
-        border: 1px solid $black-90-color;
+        border-bottom: 1px solid $black-90-color;
 
-        &:hover{
-          border-bottom: none;
-        }
 
       }
     }
@@ -322,6 +320,17 @@
     }
     &-button{
       max-width: 292px;
+    }
+  }
+  .footer{
+    &-container{
+      justify-items: center;
+    }
+    &-link{
+      text-align: center;
+    }
+    &-number{
+      align-self: center;
     }
   }
 }
