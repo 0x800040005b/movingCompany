@@ -428,7 +428,9 @@ p {
 }
 
 ul,
-ul li {
+ul li,
+ol,
+ol li {
   list-style: none;
 }
 
