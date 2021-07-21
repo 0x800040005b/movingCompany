@@ -432,6 +432,11 @@ ul li {
   list-style: none;
 }
 
+.btn--reset {
+  border: none;
+  background-color: transparent;
+}
+
 .header {
   padding-top: 47px;
   position: absolute;
@@ -749,6 +754,7 @@ ul li {
   font-weight: 500;
   font-size: 16px;
   color: #333;
+  border-bottom: 1px solid #333;
 }
 
 .card-more:hover {
@@ -930,6 +936,10 @@ ul li {
   margin-right: 0;
 }
 
+.reviews-star:hover {
+  cursor: pointer;
+}
+
 .reviews-text {
   font-size: 16px;
   font-weight: 400;
@@ -960,6 +970,10 @@ ul li {
   text-align: center;
   margin: 0 auto;
   max-width: 255px;
+}
+
+.reviews-hide {
+  display: none;
 }
 
 .order {
@@ -1378,6 +1392,7 @@ ul li {
 
   .header {
     padding-top: 20px;
+    padding-bottom: 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -1572,10 +1587,6 @@ ul li {
 
   .reviews-item {
     margin-bottom: 30px;
-  }
-
-  .reviews-hide {
-    display: none;
   }
 
   .map-info {

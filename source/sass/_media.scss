@@ -22,6 +22,7 @@
   }
   .header {
     padding-top: 20px;
+    padding-bottom: 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -219,9 +220,7 @@
     &-item{
       margin-bottom: 30px;
     }
-    &-hide{
-      display: none;
-    }
+
   }
   .map{
     &-info{

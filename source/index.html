@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0,  minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,25 +17,26 @@
         <a class="logo header-logo">
             <picture class="picture-logo">
                 <source srcset="img/header/logo-mobile.svg" media="(max-width: 320px)">
-                <img src="img/header/logo.svg" alt="Logo" class="logo__img" width="115" height="37">
+                <img src="img/header/logo.svg" alt="Logo" class="logo__img">
 
             </picture>
         </a>
-        <div id="menu-container" class="menu-container">
+        <nav id="menu-container" class="menu-container">
             <ul id="menu" class="menu header-menu">
                 <li class="header-menu__item"><a href="#price" class="header-menu__link menu__link">Цены</a></li>
                 <li class="header-menu__item"><a href="#park" class="header-menu__link menu__link">Автопарк</a></li>
                 <li class="header-menu__item"><a href="#reviews" class="header-menu__link menu__link">Отзывы</a></li>
                 <li class="header-menu__item"><a href="#footer" class="header-menu__link menu__link">Контакты</a></li>
+
             </ul>
-            <div id="header-menu__close" class="header-menu__close"></div>
-        </div>
+            <button id="header-menu__close" class=" btn--reset header-menu__close" aria-label="закрыть меню"></button>
+        </nav>
         <!-- /.menu-container -->
         <a href="tel:88000801213" class="number header-number">8(800)-080-12-13</a>
-        <div id="burger" class="burger">
+        <button id="burger" class="btn--reset burger" aria-label="Открыть меню">
             <span class="burger-line"></span>
             <span class="burger-line"></span>
-            <span class="burger-line"></span></div>
+            <span class="burger-line"></span></button>
     </div>
     <!-- /.container -->
 </header>
@@ -53,13 +54,13 @@
                     <a href="#" class="hero-button order-button">заказать</a>
                     <ul class="hero-features__list">
                         <li class="hero-features__item features-item_1">
-                            <img src="img/hero/icons/truck-group.svg" alt="icon truck" width="54.64" height="39"
+                            <img src="img/hero/icons/truck-group.svg" alt="icon truck" width="57" height="39"
                                  class="features-img">
                             <p class="features-text">Более 800 <br>
                                 переездов</p>
                         </li>
                         <li class="hero-features__item features-item_2">
-                            <img src="img/hero/icons/trigger-group.svg" alt="icon trigger" width="42" height="37.78"
+                            <img src="img/hero/icons/trigger-group.svg" alt="icon trigger" width="42" height="38"
                                  class="features-img">
                             <p class="features-text">Бережная <br>
                                 упаковка
@@ -92,8 +93,8 @@
         <div class="container">
             <div class="content-wrapper">
                 <h2 class="step-title title">Как это происходит?</h2>
-                <div class="step-container">
-                    <div class="step-item">
+                <ul class="step-container">
+                    <li class="step-item">
                         <span class="step-number">01</span>
                         <div class="step-content">
                             <h3 class="step-content__title">Оценка объема предстоящих работ</h3>
@@ -101,8 +102,8 @@
                                 мебели. </p>
                         </div>
 
-                    </div>
-                    <div class="step-item">
+                    </li>
+                    <li class="step-item">
                         <span class="step-number">02</span>
                         <div class="step-content">
                             <h3 class="step-content__title">Упаковка вещей</h3>
@@ -110,8 +111,8 @@
                                 деликатное, упаковываем отдельно. </p>
                         </div>
 
-                    </div>
-                    <div class="step-item">
+                    </li>
+                    <li class="step-item">
                         <span class="step-number">03</span>
                         <div class="step-content">
                             <h3 class="step-content__title">Погрузка и транспортировка <span
@@ -120,8 +121,8 @@
                                 габаритов.</p>
                         </div>
 
-                    </div>
-                    <div class="step-item">
+                    </li>
+                    <li class="step-item">
                         <span class="step-number">04</span>
                         <div class="step-content">
                             <h3 class="step-content__title">Распаковка и расстановка мебели</h3>
@@ -130,10 +131,10 @@
                                 распаковки.</p>
                         </div>
 
-                    </div>
+                    </li>
 
 
-                </div>
+                </ul>
             </div>
             <!-- /.content-wrapper -->
         </div>
@@ -155,7 +156,7 @@
                     <p class="card-price">8 490&#8381;</p>
                     <a href="#" class="card-order__button order-button">Заказать</a>
                 </li>
-                <li class="card-item card-hide">
+                <li class="card-item">
                     <h3 class="card-title">2-комнатная кв-ра </h3>
                     <div class="card-features">
                         <p class="card-feature">1 газель - 3 метра </p>
@@ -165,7 +166,7 @@
                     <p class="card-price">10 990&#8381;</p>
                     <a href="#" class="card-order__button order-button">Заказать</a>
                 </li>
-                <li class="card-item card-hide">
+                <li class="card-item ">
                     <h3 class="card-title">3-комнатная кв-ра </h3>
                     <div class="card-features">
                         <p class="card-feature">1 газель - 4 метра</p>
@@ -178,7 +179,7 @@
 
             </ul>
             <div class="card-more-wrapper">
-                <a href="#" class="card-more">Все цены</a>
+                <button id="price-button" class=" btn--reset card-more">Все цены</button>
             </div>
         </div>
         <!-- /.container -->
@@ -191,7 +192,7 @@
                 <h3 class="park-subtitle">10 видов автомобилей от 800 кг до 10 тонн</h3>
                 <div class="park-tabs">
                     <ul class="tab-list">
-                        <li class="tab-item"><a class="tab-link">Газели</a></li>
+                        <li class="tab-item"><a class="tab-link active">Газели</a></li>
                         <li class="tab-item"><a class="tab-link">Каблуки</a></li>
                         <li class="tab-item"><a class="tab-link">Грузовики</a></li>
                     </ul>
@@ -223,32 +224,32 @@
     <section id="reviews" class="reviews">
         <div class="container">
             <h2 class="title reviews-title">Отзывы</h2>
-            <div class="reviews-container">
-                <div class="reviews-item">
+            <ul class="reviews-container">
+                <li class="reviews-item">
                     <h3 class="reviews-author">Ирина</h3>
                     <div class="reviews-info">
-                        <time class="reviews-date" datetime="2019/03/24">24.03.2019</time>
+                        <time class="reviews-date" datetime="2019-03-24">24.03.2019</time>
                         <div class="reviews-mark">
-                            <a href="#" class="reviews-star">
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
+                                     height="14">
+                            </button>
                         </div>
                     </div>
                     <p class="reviews-text">Обращение к вам за помощью в переезде оставило только положительные
@@ -256,33 +257,34 @@
                         во двор, он проявил себя как компетентный
                         и профессиональный сотрудник, за что ему огромное... </p>
                     <a href="#" class="reviews-more">Читать полностью</a>
-                </div>
-                <div class="reviews-item reviews-hide">
+                </li>
+                <li class="reviews-item">
                     <h3 class="reviews-author">Светлана Васильевна </h3>
                     <div class="reviews-info">
-                        <time class="reviews-date" datetime="2019/09/13">13.09.2019</time>
+                        <time class="reviews-date" datetime="2019-09-13">13.09.2019</time>
                         <div class="reviews-mark">
-                            <a href="#" class="reviews-star">
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
+                                     height="14">
+                            </button>
                         </div>
+
                     </div>
                     <p class="reviews-text">
                         Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали
@@ -291,33 +293,34 @@
                         Когда....
                     </p>
                     <a href="#" class="reviews-more">Читать полностью</a>
-                </div>
-                <div class="reviews-item reviews-hide">
+                </li>
+                <li class="reviews-item">
                     <h3 class="reviews-author">Ольга Петрова</h3>
                     <div class="reviews-info">
                         <time class="reviews-date" datetime="2019.11.11">11.11.2019</time>
                         <div class="reviews-mark">
-                            <a href="#" class="reviews-star">
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
-                            <a href="#" class="reviews-star">
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
                                 <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
-                                     height="14.5">
-                            </a>
+                                     height="14">
+                            </button>
                         </div>
+
                     </div>
                     <p class="reviews-text">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены
                         фиксированы,
@@ -326,10 +329,116 @@
                         его...
                     </p>
                     <a href="#" class="reviews-more">Читать полностью</a>
-                </div>
-            </div>
+                </li>
+                <li class="reviews-item">
+                    <h3 class="reviews-author">Ирина</h3>
+                    <div class="reviews-info">
+                        <time class="reviews-date" datetime="2019-03-24">24.03.2019</time>
+                        <div class="reviews-mark">
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                        </div>
+                    </div>
+                    <p class="reviews-text">Обращение к вам за помощью в переезде оставило только положительные
+                        впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом
+                        во двор, он проявил себя как компетентный
+                        и профессиональный сотрудник, за что ему огромное... </p>
+                    <a href="#" class="reviews-more">Читать полностью</a>
+                </li>
+                <li class="reviews-item">
+                    <h3 class="reviews-author">Светлана Васильевна </h3>
+                    <div class="reviews-info">
+                        <time class="reviews-date" datetime="2019-09-13">13.09.2019</time>
+                        <div class="reviews-mark">
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                        </div>
+
+                    </div>
+                    <p class="reviews-text">
+                        Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали
+                        на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на
+                        час). Водитель заранее позвонил, предупредил, что задерживается.
+                        Когда....
+                    </p>
+                    <a href="#" class="reviews-more">Читать полностью</a>
+                </li>
+                <li class="reviews-item">
+                    <h3 class="reviews-author">Ольга Петрова</h3>
+                    <div class="reviews-info">
+                        <time class="reviews-date" datetime="2019.11.11">11.11.2019</time>
+                        <div class="reviews-mark">
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                            <button class="btn--reset reviews-star">
+                                <img src="img/reviews/star.svg" alt="star-image" class="reviews-star__img" width="15"
+                                     height="14">
+                            </button>
+                        </div>
+
+                    </div>
+                    <p class="reviews-text">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены
+                        фиксированы,
+                        что упрощает расчет. Безо всяких заморочек, в отличии от их конкурентов. Упаковали все
+                        качественно и быстро. Все вещи приехали в сохранности. Особлая благодарность Александру за
+                        его...
+                    </p>
+                    <a href="#" class="reviews-more">Читать полностью</a>
+                </li>
+
+            </ul>
             <!-- /.reviews-container -->
-            <a href="#" class="reviews-all">Все отзывы</a>
+            <button id="reviews-button" class="btn--reset reviews-all">Все отзывы</button>
         </div>
         <!-- /.container -->
     </section>
@@ -453,7 +562,7 @@
             </div>
             <div class="footer-section footer-section_4">
                 <div class="footer-wrapper">
-                    <a href="#" class="footer-callback order-button">обратный звонок</a>
+                    <button href="#" class="btn--reset footer-callback order-button">обратный звонок</button>
                     <a href="tel:88000801213" class="number footer-number">8(800)-080-12-13</a>
                 </div>
                 <!-- /.footer-wrapper -->
@@ -489,5 +598,7 @@
 <script src="js/main.js"></script>
 <script src="js/callbackForm.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/price.js"></script>
+<script src="js/reviews.js"></script>
 </body>
 </html>
